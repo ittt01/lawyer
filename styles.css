@@ -42,7 +42,7 @@ h1, h2, h3, .brand-copy strong { font-family: "Kanit", sans-serif; }
 .header-phone > span:first-child { font-size: 1.1rem; }
 .header-phone > span:last-child { display: grid; font-size: .73rem; }
 .header-phone strong { font-size: .9rem; }
-.line-button { background: var(--green); color: #062c1a; }
+.line-button { background: #d0bc72; color: var(--white); }
 .line-button span { padding: 2px 4px; border: 1px solid currentColor; border-radius: 4px; font-family: "Kanit", sans-serif; font-size: .58rem; font-weight: 700; }
 .menu-toggle { width: 46px; height: 46px; display: grid; align-content: center; justify-items: center; gap: 6px; margin-left: 8px; border: 0; background: transparent; cursor: pointer; }
 .menu-toggle span { width: 25px; height: 2px; display: block; background: var(--white); transition: transform .25s ease, opacity .2s ease; }
@@ -71,10 +71,14 @@ h1, h2, h3, .brand-copy strong { font-family: "Kanit", sans-serif; }
 .hero h1 { margin-bottom: 26px; color: var(--white); font-size: clamp(2.5rem, 6.4vw, 5.4rem); font-weight: 600; line-height: 1.15; letter-spacing: .005em; }
 .hero h1 span { color: var(--gold); }
 .hero-thai { margin-bottom: 34px; color: rgba(255,255,255,.92); font-size: clamp(1.08rem, 2.2vw, 1.45rem); line-height: 1.7; }
+.hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
 .button { min-height: 50px; display: inline-flex; align-items: center; justify-content: center; gap: 22px; padding: 11px 22px; border: 1px solid transparent; font-family: "Kanit", sans-serif; font-weight: 500; transition: background .2s ease, color .2s ease, border-color .2s ease, transform .2s ease; }
 .button:hover { transform: translateY(-2px); }
 .button-gold { background: var(--gold); color: var(--navy-deep); }
 .button-gold:hover { background: var(--gold-light); }
+.hero-actions .button-gold { background: var(--white); color: #0a4773; }
+.hero-actions .button-gold:hover { background: #f0f2f3; }
+.hero-actions .line-button { min-height: 50px; padding: 11px 22px; }
 .scroll-cue { position: absolute; z-index: 1; bottom: 25px; left: 50%; display: flex; align-items: center; gap: 10px; transform: translateX(-50%); color: rgba(255,255,255,.8); font-size: .72rem; white-space: nowrap; }
 .scroll-cue span { width: 17px; height: 26px; border: 1px solid rgba(255,255,255,.7); border-radius: 12px; }
 .hero-index { position: absolute; right: max(32px, calc((100vw - var(--container)) / 2)); bottom: 30px; display: flex; align-items: center; gap: 12px; color: rgba(255,255,255,.65); font-family: "Kanit", sans-serif; font-size: .72rem; }
