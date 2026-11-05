@@ -1,182 +1,247 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>สำนักงานกฎหมาย | ที่ปรึกษากฎหมายและว่าความ</title>
-<meta name="description" content="สำนักงานกฎหมายและที่ปรึกษาธุรกิจ ให้บริการว่าความ ให้คำปรึกษา และดูแลงานนิติกรรมครบวงจร">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@500;700&family=Sarabun:wght@300;400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#09243a">
+  <title>บริษัท สำนักกฎหมายธนกฤช จำกัด | Thanakrit Law Office</title>
+  <meta name="description" content="บริษัท สำนักกฎหมายธนกฤช จำกัด ให้บริการด้านที่ปรึกษากฎหมายธุรกิจ ดำเนินคดี จัดทำสัญญา เจรจาไกล่เกลี่ย และสืบทรัพย์บังคับคดี">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="บริษัท สำนักกฎหมายธนกฤช จำกัด หน้าแรก">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" fill="none">
+            <path d="M32 10v38M21 51h22M13 21h38M21 21l-9 19h18l-9-19Zm22 0-9 19h18l-9-19Z"/>
+            <path d="M24 10h16M28 6h8"/>
+          </svg>
+        </span>
+        <span class="brand-copy"><strong>บริษัท สำนักกฎหมายธนกฤช จำกัด</strong><small>THANAKRIT LAW OFFICE</small></span>
+      </a>
 
-<!-- ===== Header ===== -->
-<header>
-  <div class="container nav">
-    <a href="#home" class="logo" aria-label="หน้าแรก">
-      <div class="logo-mark">
-        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v18M5 21h14M4 8h16M7 8l-3 6a3 3 0 0 0 6 0zM17 8l-3 6a3 3 0 0 0 6 0z"/></svg>
+      <div class="header-actions">
+        <a class="header-phone" href="tel:024393486"><span aria-hidden="true">☎</span><span>โทรปรึกษา<strong>02-439-3486</strong></span></a>
+        <a class="line-button" href="https://lin.ee/2UHKcpq" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">LINE</span> ติดต่อผ่านไลน์</a>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="เปิดเมนู" aria-expanded="false" aria-controls="siteMenu">
+          <span></span><span></span><span></span>
+        </button>
       </div>
-      <div class="logo-text"><b>สำนักงานกฎหมาย</b><small>LAW & BUSINESS ADVISORY</small></div>
-    </a>
-    <ul class="menu" id="menu">
-      <li><a href="#home">หน้าแรก</a></li>
-      <li class="has-sub"><a href="#about">เกี่ยวกับเรา ▾</a>
-        <ul class="dropdown">
-          <li><a href="#about">ประวัติสำนักงาน</a></li>
-          <li><a href="#team">ทีมทนายความ</a></li>
-        </ul>
-      </li>
-      <li><a href="#services">บริการของเรา</a></li>
-      <li><a href="#contact">ติดต่อเรา</a></li>
-      <li><a href="#contact" class="btn btn-gold menu-cta">นัดหมายปรึกษา</a></li>
-    </ul>
-    <button class="burger" id="burger" aria-label="เปิดเมนู" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
-  </div>
-</header>
-
-<!-- ===== Hero ===== -->
-<section class="hero" id="home">
-  <div class="container hero-content">
-    <p class="eyebrow">LAW FIRM · LEGAL ADVISORY</p>
-    <h1>สำนักงานกฎหมาย<br>เคียงข้างคุณสู่<span>ความเป็นธรรม</span></h1>
-    <p>ให้คำปรึกษาและดูแลทุกประเด็นทางกฎหมาย ด้วยความรู้ ความเข้าใจ และความใส่ใจในทุกขั้นตอน</p>
-    <div class="actions">
-      <a href="#contact" class="btn btn-gold">นัดหมายปรึกษา</a>
-      <a href="#about" class="btn btn-line">รู้จักสำนักงาน</a>
     </div>
-  </div>
-  <a class="hero-scroll" href="#about" aria-label="เลื่อนลงเพื่ออ่านเพิ่มเติม"><span></span> เลื่อนเพื่อดูเพิ่มเติม</a>
-</section>
+    <nav class="site-menu" id="siteMenu" aria-label="เมนูหลัก" aria-hidden="true">
+      <div class="menu-inner">
+        <p class="eyebrow">THANAKRIT LAW OFFICE</p>
+        <a href="index.html">หน้าแรก</a>
+        <details class="menu-services">
+          <summary>บริการ</summary>
+          <div class="menu-subitems">
+            <a href="services.html#construction">กฎหมายธุรกิจและก่อสร้าง</a>
+            <a href="services.html#construction-disputes">ระงับข้อพิพาทงานก่อสร้าง</a>
+            <a href="services.html#construction-debt">บริหารหนี้และคดีก่อสร้าง</a>
+            <a href="services.html#business">ที่ปรึกษากฎหมายธุรกิจ</a>
+            <a href="services.html#labor">คดีทุจริตภายในองค์กรและแรงงานสัมพันธ์</a>
+            <a href="services.html#property">คดีทรัพย์สินและการลงทุน</a>
+            <a href="services.html#investment-fraud">คดีฉ้อโกงการลงทุน / ฉ้อโกงประชาชน</a>
+            <a href="services.html#enforcement">สืบทรัพย์และบังคับคดี</a>
+            <a href="services.html#inheritance">จัดการมรดกและทรัพย์สินครอบครัว</a>
+            <a href="services.html#civil">คดีแพ่ง</a>
+            <a href="services.html#criminal">คดีอาญาทั่วไป</a>
+            <a href="services.html#contracts">บริการร่างและตรวจสัญญา</a>
+            <a href="services.html#other">บริการทนายความอื่นๆ</a>
+          </div>
+        </details>
+        <a href="about.html">เกี่ยวกับเรา</a>
+        <a href="blog.html">บทความ</a>
+        <a href="contact.html">ติดต่อเรา</a>
+        <a href="en.html" lang="en">English</a>
+      </div>
+    </nav>
+  </header>
 
-<!-- ===== About ===== -->
-<section class="section" id="about">
-  <div class="container about-grid">
-    <div class="about-visual reveal">
-      <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1000&q=85" alt="หนังสือกฎหมายและค้อนผู้พิพากษา" loading="lazy">
-      <div class="stamp"><b>LEGAL</b>ที่ปรึกษากฎหมาย</div>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-shade"></div>
+      <div class="container hero-content reveal">
+        <p class="eyebrow">THANAKRIT LAW OFFICE</p>
+        <h1>THANAKRIT<br><span>LAW OFFICE</span></h1>
+        <p class="hero-thai">บริษัท สำนักกฎหมายธนกฤช จำกัด<br>ให้คำปรึกษาและดูแลเรื่องกฎหมายสำหรับบุคคลและธุรกิจ</p>
+        <a class="button button-gold" href="#contact">ปรึกษาทีมกฎหมาย <span aria-hidden="true">→</span></a>
+      </div>
+      <a class="scroll-cue" href="#about"><span></span> เลื่อนเพื่อดูเพิ่มเติม</a>
+      <div class="hero-index"><span>01</span><i></i><span>04</span></div>
+    </section>
+
+    <section class="intro section" id="about">
+      <div class="container intro-grid">
+        <div class="intro-photo reveal">
+          <img src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&w=1100&q=85" alt="อาคารศาลและสถาปัตยกรรมทางกฎหมาย" loading="lazy">
+          <span class="photo-caption">LEGAL COUNSEL · LITIGATION · BUSINESS</span>
+        </div>
+        <div class="intro-copy reveal">
+          <p class="eyebrow">THANAKRIT LAW OFFICE</p>
+          <h2>ที่ปรึกษากฎหมาย<br>เพื่อธุรกิจและข้อพิพาท</h2>
+          <p>สำนักงานให้บริการคำปรึกษากฎหมายที่เกี่ยวข้องกับการดำเนินธุรกิจและข้อพิพาท เช่น สัญญาซื้อขาย การจ้างทำของ งานก่อสร้าง การกู้ยืม การค้า การขนส่ง ที่ดิน ครอบครัว และมรดก</p>
+          <p>แนวทางการทำงานเริ่มจากพิจารณาข้อเท็จจริงและเอกสารที่เกี่ยวข้อง เพื่ออธิบายทางเลือกและขั้นตอนที่อาจเหมาะสมกับแต่ละกรณี</p>
+          <a class="text-link" href="#services">ค้นหาบริการที่เหมาะกับคุณ <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><p class="eyebrow">OUR LEGAL SERVICES</p><h2>บริการทางกฎหมายของเรา</h2></div>
+          <p>ตั้งแต่การวางกลยุทธ์และให้คำปรึกษา ไปจนถึงการดำเนินงานทางกฎหมายในทุกขั้นตอน</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card reveal">
+            <span class="service-number">01</span><span class="service-icon" aria-hidden="true">§</span>
+            <h3>วางกลยุทธ์และให้คำปรึกษา</h3>
+            <p>ประเมินข้อเท็จจริงและข้อกฎหมาย วางแนวทางรับมือข้อพิพาทและความเสี่ยงทางธุรกิจ</p>
+            <a href="services.html#business" aria-label="ดูบริการที่ปรึกษากฎหมายธุรกิจ">ดูรายละเอียด <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-number">02</span><span class="service-icon" aria-hidden="true">⚖</span>
+            <h3>ดำเนินคดีแพ่งและพาณิชย์</h3>
+            <p>ดูแลข้อพิพาทเกี่ยวกับสัญญา หนี้ การซื้อขาย การก่อสร้าง ที่ดิน และการประกอบธุรกิจ</p>
+            <a href="services.html#civil" aria-label="ดูบริการคดีแพ่ง">ดูรายละเอียด <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-number">03</span><span class="service-icon" aria-hidden="true">◈</span>
+            <h3>ดำเนินคดีอาญา</h3>
+            <p>ให้คำแนะนำและดูแลคดีอาญาตามข้อเท็จจริงและสิทธิของผู้เกี่ยวข้องในแต่ละกรณี</p>
+            <a href="services.html#criminal" aria-label="ดูบริการคดีอาญา">ดูรายละเอียด <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-number">04</span><span class="service-icon" aria-hidden="true">⌕</span>
+            <h3>ติดตามหนี้และบังคับคดี</h3>
+            <p>เจรจาติดตามหนี้ ตรวจสอบทรัพย์สิน และดำเนินการตามขั้นตอนบังคับคดีเมื่อมีคำพิพากษา</p>
+            <a href="services.html#enforcement" aria-label="ดูบริการสืบทรัพย์และบังคับคดี">ดูรายละเอียด <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-number">05</span><span class="service-icon" aria-hidden="true">▤</span>
+            <h3>จัดทำและตรวจสอบสัญญา</h3>
+            <p>ร่าง ตรวจทาน และให้คำแนะนำเกี่ยวกับสัญญาทางธุรกิจและนิติกรรมประเภทต่าง ๆ</p>
+            <a href="services.html#contracts" aria-label="ดูบริการร่างและตรวจสัญญา">ดูรายละเอียด <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-number">06</span><span class="service-icon" aria-hidden="true">↔</span>
+            <h3>เจรจา ไกล่เกลี่ย และประนอมหนี้</h3>
+            <p>ช่วยเตรียมแนวทางเจรจาและประสานการหาข้อยุติที่เหมาะสมกับสถานการณ์</p>
+            <a href="services.html#construction-disputes" aria-label="ดูบริการระงับข้อพิพาท">ดูรายละเอียด <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="practice section">
+      <div class="container practice-grid">
+        <div class="practice-copy reveal">
+          <p class="eyebrow">PRACTICE AREAS</p>
+          <h2>ดูแลประเด็นสำคัญ<br>ด้วยมุมมองรอบด้าน</h2>
+          <p>งานกฎหมายที่ดีเริ่มจากการเข้าใจเป้าหมายและบริบทของแต่ละคน เราพร้อมช่วยคุณเตรียมความพร้อม ตั้งคำถามที่สำคัญ และเลือกแนวทางที่สอดคล้องกับข้อเท็จจริง</p>
+          <a class="button button-outline" href="#contact">พูดคุยกับเรา <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="practice-list reveal">
+          <div><span>01</span><p>ข้อพิพาททางการค้าและสัญญาธุรกิจ</p><b>↗</b></div>
+          <div><span>02</span><p>คดีเกี่ยวกับที่ดินและอสังหาริมทรัพย์</p><b>↗</b></div>
+          <div><span>03</span><p>กฎหมายแรงงานและการจ้างงาน</p><b>↗</b></div>
+          <div><span>04</span><p>ครอบครัว มรดก และการจัดการทรัพย์สิน</p><b>↗</b></div>
+          <div><span>05</span><p>ธุรกิจ การลงทุน และงานนิติกรรม</p><b>↗</b></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="insights section" id="insights">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><p class="eyebrow">LEGAL INSIGHTS</p><h2>ความรู้ทางกฎหมาย</h2></div>
+          <p>ข้อมูลเบื้องต้นเพื่อช่วยให้เข้าใจประเด็นสำคัญ ก่อนตัดสินใจดำเนินการในเรื่องของคุณ</p>
+        </div>
+        <div class="insight-grid">
+          <article class="insight-card reveal">
+            <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=900&q=85" alt="เอกสารสัญญาบนโต๊ะทำงาน" loading="lazy">
+            <div><span>สัญญาและธุรกิจ</span><h3>ก่อนลงนามในสัญญา ควรตรวจสอบเรื่องใดบ้าง?</h3><a href="#contact" aria-label="สอบถามเกี่ยวกับการตรวจสอบสัญญา">อ่านเพิ่มเติม <b>↗</b></a></div>
+          </article>
+          <article class="insight-card reveal">
+            <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=900&q=85" alt="ค้อนผู้พิพากษาและกฎหมาย" loading="lazy">
+            <div><span>ข้อพิพาทและคดีความ</span><h3>เมื่อได้รับหนังสือทวงถามหรือหมายศาล ควรเริ่มต้นอย่างไร?</h3><a href="#contact" aria-label="สอบถามเมื่อได้รับหนังสือทวงถามหรือหมายศาล">อ่านเพิ่มเติม <b>↗</b></a></div>
+          </article>
+          <article class="insight-card reveal">
+            <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=900&q=85" alt="การปรึกษาและวางแผนทางกฎหมาย" loading="lazy">
+            <div><span>การเจรจาไกล่เกลี่ย</span><h3>เตรียมตัวอย่างไรให้การเจรจามีข้อมูลและเป้าหมายชัดเจน?</h3><a href="#contact" aria-label="สอบถามเกี่ยวกับการเจรจาไกล่เกลี่ย">อ่านเพิ่มเติม <b>↗</b></a></div>
+          </article>
+        </div>
+        <p class="disclaimer">บทความเป็นข้อมูลทั่วไป ไม่ใช่คำแนะนำทางกฎหมายสำหรับข้อเท็จจริงเฉพาะกรณี</p>
+      </div>
+    </section>
+
+    <section class="promise section">
+      <div class="container promise-inner reveal">
+        <p class="eyebrow">YOUR TRUSTED LEGAL PARTNER</p>
+        <h2>เรื่องกฎหมายที่ซับซ้อน<br>เริ่มต้นได้ด้วยการปรึกษาที่ตรงประเด็น</h2>
+        <p>เราเชื่อในการสื่อสารอย่างตรงไปตรงมา การอธิบายทางเลือกให้ชัดเจน และการดูแลข้อมูลของคุณอย่างเหมาะสม</p>
+        <a class="button button-gold" href="#contact">ปรึกษาสำนักงาน <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><p class="eyebrow">CONTACT OUR OFFICE</p><h2>เริ่มต้นพูดคุยกับเรา</h2></div>
+          <p>แจ้งรายละเอียดเบื้องต้นเพื่อให้ทีมงานติดต่อกลับ ข้อมูลในแบบฟอร์มนี้เป็นตัวอย่างและยังไม่ได้เชื่อมต่อระบบส่งข้อมูล</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <h3>บริษัท สำนักกฎหมายธนกฤช จำกัด</h3>
+            <p>เรายินดีรับฟังและช่วยประเมินแนวทางเบื้องต้นสำหรับเรื่องของคุณ</p>
+            <a href="tel:024393486"><span>โทรศัพท์</span><strong>02-439-3486</strong></a>
+            <a href="mailto:thanakrit_law@hotmail.com"><span>อีเมล</span><strong>thanakrit_law@hotmail.com</strong></a>
+            <div class="office-hours"><span>แฟกซ์</span><strong>02-862-4664</strong></div>
+            <div class="address"><span>ที่ตั้งสำนักงาน</span><strong>25 ซอยเจริญนคร 36 ถนนเจริญนคร แขวงบางลำภูล่าง กรุงเทพมหานคร 10600</strong></div>
+          </div>
+          <form class="contact-form reveal" id="contactForm">
+            <div class="form-row">
+              <label>ชื่อ-นามสกุล<input name="name" autocomplete="name" required></label>
+              <label>เบอร์โทรศัพท์<input name="phone" type="tel" autocomplete="tel" required></label>
+            </div>
+            <label>อีเมล<input name="email" type="email" autocomplete="email"></label>
+            <label>เรื่องที่ต้องการปรึกษา
+              <select name="topic">
+                <option>กฎหมายธุรกิจและก่อสร้าง</option><option>ระงับข้อพิพาทงานก่อสร้าง</option>
+                <option>บริหารหนี้และคดีก่อสร้าง</option><option>ที่ปรึกษากฎหมายธุรกิจ</option>
+                <option>คดีทุจริตภายในองค์กรและแรงงานสัมพันธ์</option><option>คดีทรัพย์สินและการลงทุน</option>
+                <option>คดีฉ้อโกงการลงทุน / ฉ้อโกงประชาชน</option><option>สืบทรัพย์และบังคับคดี</option>
+                <option>จัดการมรดกและทรัพย์สินครอบครัว</option><option>ว่าความและระงับข้อพิพาททั่วไป</option>
+                <option>คดีแพ่ง</option><option>คดีอาญาทั่วไป</option><option>บริการร่างและตรวจสัญญา</option>
+                <option>บริการทนายความอื่นๆ</option>
+              </select>
+            </label>
+            <label>รายละเอียดเบื้องต้น<textarea name="message" rows="4" required></textarea></label>
+            <label class="consent"><input type="checkbox" required><span>ยินยอมให้ติดต่อกลับตามข้อมูลที่ให้ไว้</span></label>
+            <button class="button button-gold" type="submit">ส่งข้อความ <span aria-hidden="true">→</span></button>
+            <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <a class="brand footer-brand" href="#home">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none"><path d="M32 10v38M21 51h22M13 21h38M21 21l-9 19h18l-9-19Zm22 0-9 19h18l-9-19Z"/></svg></span>
+        <span class="brand-copy"><strong>บริษัท สำนักกฎหมายธนกฤช จำกัด</strong><small>THANAKRIT LAW OFFICE</small></span>
+      </a>
+      <p>บริการด้านกฎหมายและที่ปรึกษาสำหรับบุคคลและธุรกิจ</p>
+      <a class="footer-contact" href="#contact">ติดต่อสำนักงาน <span aria-hidden="true">↗</span></a>
     </div>
-    <div class="reveal">
-      <p class="eyebrow">เกี่ยวกับเรา</p>
-      <h2 class="title">ความรู้ทางกฎหมาย<br>พร้อมความเข้าใจในธุรกิจ</h2>
-      <p class="lead">เราทำงานร่วมกับบุคคลและองค์กร เพื่อช่วยให้เรื่องกฎหมายที่ซับซ้อนกลายเป็นแนวทางที่ชัดเจน ทีมงานให้ความสำคัญกับการรับฟังข้อเท็จจริง การวิเคราะห์อย่างรอบด้าน และการสื่อสารที่เข้าใจง่ายในทุกขั้นตอน</p>
-      <ul class="checks">
-        <li>ทนายความที่มีใบอนุญาตและความเชี่ยวชาญเฉพาะด้าน</li>
-        <li>แจ้งค่าบริการชัดเจนก่อนเริ่มงาน ไม่มีค่าใช้จ่ายแอบแฝง</li>
-        <li>รายงานความคืบหน้าคดีอย่างสม่ำเสมอ</li>
-        <li>รักษาความลับของลูกค้าอย่างเคร่งครัด</li>
-      </ul>
-      <a href="#team" class="btn btn-gold">รู้จักทีมของเรา</a>
-    </div>
-  </div>
-</section>
-
-<!-- ===== Services ===== -->
-<section class="section services" id="services">
-  <div class="container center">
-    <p class="eyebrow">บริการของเรา</p>
-    <h2 class="title">บริการของเรา</h2>
-    <p class="lead">ดูแลทั้งบุคคลทั่วไปและองค์กรธุรกิจ ด้วยบริการทางกฎหมายที่ออกแบบให้เหมาะกับแต่ละเรื่อง</p>
-  </div>
-  <div class="container grid-3">
-    <div class="card reveal">
-    <img class="service-image" src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&w=900&q=85" alt="อาคารศาลและเสาหิน" loading="lazy">
-    <div class="icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#c9a14a" stroke-width="1.7"><path d="M14 13l-7.5 7.5a2.1 2.1 0 0 1-3-3L11 10M16 16l6-6M8 8l6-6M9 7l8 8"/></svg></div>
-    <h3>ว่าความและดำเนินคดี</h3>
-    <p>วางแนวทางและดูแลกระบวนการทางศาลให้เหมาะสมกับข้อเท็จจริงของแต่ละคดี</p>
-    <ul><li>คดีแพ่งและคดีอาญา</li><li>คดีแรงงานและปกครอง</li><li>คดีธุรกิจและทรัพย์สินทางปัญญา</li></ul>
-    </div>
-    <div class="card reveal">
-    <img class="service-image" src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=900&q=85" alt="ผู้เชี่ยวชาญกำลังหารือเอกสาร" loading="lazy">
-    <div class="icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#c9a14a" stroke-width="1.7"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
-    <h3>ให้คำปรึกษากฎหมาย</h3>
-    <p>วิเคราะห์ประเด็นและเสนอทางเลือกที่ชัดเจน เพื่อช่วยให้ตัดสินใจได้อย่างมั่นใจ</p>
-    <ul><li>ที่ปรึกษากฎหมายสำหรับธุรกิจ</li><li>ตรวจสอบและจัดทำสัญญา</li><li>วางแผนและประเมินความเสี่ยง</li></ul>
-    </div>
-    <div class="card reveal">
-    <img class="service-image" src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=85" alt="เอกสารและการวางแผนธุรกิจ" loading="lazy">
-    <div class="icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#c9a14a" stroke-width="1.7"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></div>
-    <h3>กฎหมายธุรกิจและนิติกรรม</h3>
-    <p>สนับสนุนการเริ่มต้นและดำเนินธุรกิจ พร้อมดูแลงานเอกสารทางกฎหมาย</p>
-    <ul><li>จัดตั้งและจดทะเบียนธุรกิจ</li><li>ประชุมผู้ถือหุ้นและงานบริษัท</li><li>เครื่องหมายการค้าและทรัพย์สินทางปัญญา</li></ul>
-    </div>
-  </div>
-</section>
-
-<!-- ===== Why us ===== -->
-<section class="section why">
-  <div class="container center">
-    <p class="eyebrow">WHY CHOOSE US</p>
-    <h2 class="title">ทำงานด้วยความเข้าใจ ใส่ใจในทุกรายละเอียด</h2>
-    <p class="lead">เรามุ่งสร้างความสัมพันธ์ระยะยาวด้วยการทำงานอย่างมืออาชีพ โปร่งใส และยึดประโยชน์ของลูกค้าเป็นสำคัญ</p>
-  </div>
-  <div class="container why-grid">
-    <div class="why-item reveal"><b>01</b><h3>ประสบการณ์ยาวนาน</h3><p>ผ่านคดีหลากหลายประเภทในทุกชั้นศาล</p></div>
-    <div class="why-item reveal"><b>02</b><h3>ทีมเฉพาะทาง</h3><p>จัดทนายที่ตรงกับประเภทคดีของคุณ</p></div>
-    <div class="why-item reveal"><b>03</b><h3>โปร่งใส</h3><p>ประเมินค่าบริการชัดเจนตั้งแต่ต้น</p></div>
-    <div class="why-item reveal"><b>04</b><h3>Service Mind</h3><p>ติดต่อง่าย ตอบกลับไว ใส่ใจทุกเรื่อง</p></div>
-  </div>
-</section>
-
-<!-- ===== Team ===== -->
-<section class="section" id="team">
-  <div class="container center">
-    <p class="eyebrow">ทีมทนายความ</p>
-    <h2 class="title">ผู้บริหารและทนายความ</h2>
-    <p class="lead">ทีมงานของเราพร้อมนำความเชี่ยวชาญที่หลากหลายมาดูแลทุกความต้องการ</p>
-  </div>
-  <div class="container team-grid">
-    <div class="member reveal"><img class="avatar" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=85" alt="ภาพตัวอย่างผู้ก่อตั้งสำนักงาน" loading="lazy"><h3>ชื่อผู้ก่อตั้ง</h3><span>ผู้ก่อตั้ง</span><p>คดีแพ่ง · คดีอาญา</p></div>
-    <div class="member reveal"><img class="avatar" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=85" alt="ภาพตัวอย่างกรรมการผู้จัดการ" loading="lazy"><h3>ชื่อกรรมการผู้จัดการ</h3><span>กรรมการผู้จัดการ</span><p>กฎหมายธุรกิจ</p></div>
-    <div class="member reveal"><img class="avatar" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=600&q=85" alt="ภาพตัวอย่างกรรมการบริหาร" loading="lazy"><h3>ชื่อกรรมการบริหาร</h3><span>กรรมการบริหาร</span><p>คดีแรงงาน · ปกครอง</p></div>
-    <div class="member reveal"><img class="avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=85" alt="ภาพตัวอย่างกรรมการบริหาร" loading="lazy"><h3>ชื่อกรรมการบริหาร</h3><span>กรรมการบริหาร</span><p>กฎหมายธุรกิจ</p></div>
-    <div class="member reveal"><img class="avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=85" alt="ภาพตัวอย่างกรรมการบริหาร" loading="lazy"><h3>ชื่อกรรมการบริหาร</h3><span>กรรมการบริหาร</span><p>ทรัพย์สินทางปัญญา</p></div>
-  </div>
-</section>
-
-<!-- ===== Contact ===== -->
-<section class="section services" id="contact">
-  <div class="container center">
-    <p class="eyebrow">ติดต่อเรา</p>
-    <h2 class="title">พร้อมรับฟังและให้คำปรึกษา</h2>
-  </div>
-  <div class="container contact-grid">
-    <div class="info-box reveal">
-      <h3>ข้อมูลสำนักงาน</h3>
-      <div class="info-row"><div class="ic">⌂</div><div><b>ที่ตั้ง</b>[ที่อยู่สำนักงานของคุณ]</div></div>
-      <div class="info-row"><div class="ic">☎</div><div><b>โทรศัพท์</b>02-000-0000</div></div>
-      <div class="info-row"><div class="ic">✉</div><div><b>อีเมล</b>contact@example.com</div></div>
-      <div class="info-row"><div class="ic">◷</div><div><b>เวลาทำการ</b>จันทร์–ศุกร์ 08:30–17:30</div></div>
-      <div class="map-ph">[วางโค้ด Google Maps embed ของคุณที่นี่]</div>
-    </div>
-    <form class="reveal" id="contactForm">
-      <div><label for="n">ชื่อ-นามสกุล *</label><input id="n" required></div>
-      <div><label for="p">เบอร์โทรศัพท์ *</label><input id="p" type="tel" required></div>
-      <div><label for="e">อีเมล</label><input id="e" type="email"></div>
-      <div><label for="t">ประเภทเรื่อง</label>
-        <select id="t"><option>คดีแพ่ง</option><option>คดีอาญา</option><option>ที่ปรึกษากฎหมาย</option><option>จดทะเบียนธุรกิจ</option><option>ทรัพย์สินทางปัญญา</option><option>อื่น ๆ</option></select></div>
-      <div class="full"><label for="m">รายละเอียดเบื้องต้น *</label><textarea id="m" required></textarea></div>
-      <label class="consent full"><input type="checkbox" required> ยินยอมให้สำนักงานเก็บและใช้ข้อมูลเพื่อติดต่อกลับ ตาม พ.ร.บ.คุ้มครองข้อมูลส่วนบุคคล</label>
-      <div class="full"><button class="btn btn-gold" type="submit">ส่งข้อความ</button></div>
-      <div class="form-msg full" id="formMsg">ได้รับข้อความแล้ว เจ้าหน้าที่จะติดต่อกลับโดยเร็ว</div>
-    </form>
-  </div>
-</section>
-
-<!-- ===== Footer ===== -->
-<footer>
-  <div class="container foot-grid">
-    <div><h4>สำนักงานกฎหมายของคุณ</h4><p>ให้คำปรึกษาและดูแลงานกฎหมายอย่างมืออาชีพ โดยยึดมั่นในความซื่อตรงและประโยชน์ของลูกค้า</p></div>
-    <div><h4>เมนู</h4><ul><li><a href="#home">หน้าแรก</a></li><li><a href="#about">เกี่ยวกับเรา</a></li><li><a href="#team">ทนายความ</a></li><li><a href="#contact">ติดต่อเรา</a></li></ul></div>
-    <div><h4>บริการ</h4><ul><li><a href="#services">ว่าความ</a></li><li><a href="#services">ที่ปรึกษากฎหมาย</a></li><li><a href="#services">จดทะเบียนธุรกิจ</a></li><li><a href="#services">ทรัพย์สินทางปัญญา</a></li></ul></div>
-    <div><h4>ติดต่อ</h4><ul><li>☎ 02-000-0000</li><li>✉ contact@example.com</li><li>[ที่อยู่สำนักงาน]</li></ul></div>
-  </div>
-  <div class="copy">© <span id="yr"></span> สำนักงานกฎหมายของคุณ · สงวนลิขสิทธิ์</div>
-</footer>
-
-<a href="#home" class="to-top" id="toTop" aria-label="กลับด้านบน">↑</a>
-
-<script src="script.js"></script>
+    <div class="container footer-bottom"><span>© <span id="year"></span> บริษัท สำนักกฎหมายธนกฤช จำกัด</span><a href="#home">กลับสู่ด้านบน ↑</a></div>
+  </footer>
 </body>
 </html>
